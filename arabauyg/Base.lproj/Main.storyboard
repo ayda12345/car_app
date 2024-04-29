@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="arabauyg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="arabanın içini görmek için butona bas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gj-54-Ncl">
+                                <rect key="frame" x="55" y="401" width="283" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZHl-U0-dob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dış.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YgF-Ai-hJR">
+                                <rect key="frame" x="66" y="165" width="261" height="161"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWB-6r-zjw">
+                                <rect key="frame" x="128" y="458" width="137" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="BsC-3d-x93"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="tıkla"/>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9l-FD-eKX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YgF-Ai-hJR" firstAttribute="centerX" secondItem="3gj-54-Ncl" secondAttribute="centerX" id="Ehf-Gm-XPU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zWB-6r-zjw" secondAttribute="bottom" constant="334" id="GMV-MM-FEh"/>
+                            <constraint firstItem="YgF-Ai-hJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="aDh-PG-dwe"/>
+                            <constraint firstItem="YgF-Ai-hJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="auF-z6-3ZG"/>
+                            <constraint firstItem="zWB-6r-zjw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dYF-ko-7HM"/>
+                            <constraint firstItem="zWB-6r-zjw" firstAttribute="top" secondItem="3gj-54-Ncl" secondAttribute="bottom" constant="36" id="e69-1A-Kuj"/>
+                            <constraint firstItem="3gj-54-Ncl" firstAttribute="centerX" secondItem="zWB-6r-zjw" secondAttribute="centerX" id="eHf-eH-Jcu"/>
+                            <constraint firstItem="3gj-54-Ncl" firstAttribute="top" secondItem="YgF-Ai-hJR" secondAttribute="bottom" constant="75" id="hvq-Hv-1QS"/>
+                            <constraint firstItem="zWB-6r-zjw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="vrK-dv-sEi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hondaLabel" destination="3gj-54-Ncl" id="Rb1-eb-TDi"/>
+                        <outlet property="imageView" destination="YgF-Ai-hJR" id="l0o-2w-Oz4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dış.jpg" width="528" height="396"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
